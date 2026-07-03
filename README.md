@@ -1,5 +1,5 @@
-
-> Work in progress. At this moment, this not works. Please be pacient.
+> [!NOTE]
+> Alex (the creator of PearOS) is already working on an ARM version. 
 <div align='center'>
 <p align="center">
   <img width="300" height="300" src="https://github.com/user-attachments/assets/c6bec808-b8b5-42a6-a459-e05656e47c3c" />
@@ -19,7 +19,6 @@
 <br />
 
 ---
-
 
 # pearOS-arch-base 📌
 It is pearOS, but with Arch Base. Yes! It uses vanilla arch, less bugs, easier, better etc.
@@ -55,42 +54,3 @@ sudo pacman -S xorriso                 # Creates the final ISO image
 sudo pacman -S e2fsprogs               # Provides mkfs.ext4 and tune2fs for filesystem creation
 sudo pacman -S git                     # Required for cloning pearOS-installer during build
 sudo pacman -S pv                      # Required to see progress bars
-```
-
-#### Optional packages:
-```sh
-# For EROFS image type support (if used in profiledef.sh)
-sudo pacman -S erofs-utils             # Provides mkfs.erofs
-
-# For GPG signing of the rootfs image (optional)
-# GPG is usually pre-installed, but ensure it's available:
-sudo pacman -S gnupg
-```
-
-#### Quick install command:
-```sh
-sudo pacman -S arch-install-scripts mtools squashfs-tools xorriso e2fsprogs git pv
-```
-
-#### Verify dependencies:
-To check if all required commands are available, you can use:
-```sh
-command -v pacstrap arch-chroot mksquashfs xorriso mkfs.ext4 tune2fs git pv
-```
-
-If any command is missing, install the corresponding package listed above.
-
-## Star History
-
-<a href="https://www.star-history.com/#pearOS-archlinux/iso&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=pearOS-archlinux/iso&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=pearOS-archlinux/iso&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=pearOS-archlinux/iso&type=date&legend=top-left" />
- </picture>
-</a>
-
-## Copyright and Licensing  📌
-This project is released under the GNU Pubilc License v3 or later
-
-Copyright: Alexandru Balan @ Pear Software and Services S.R.L. based in Romania, Dacia Boulevard 133, floor D, Sector 2, Bucharest CIF: 50888207
